@@ -366,7 +366,7 @@ VALUES
 
 
 DROP TABLE IF EXISTS tabl_temp;
-CREATE TABLE tabl_temp (date DATE);
+CREATE TABLE TEMPORARY tabl_temp (date DATE);
 
 INSERT INTO tabl_temp SELECT * FROM day_ ORDER BY date DESC LIMIT 5;
 
